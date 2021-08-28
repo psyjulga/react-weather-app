@@ -1,0 +1,18 @@
+.Forecast .forecast-col {
+  position: relative;
+  bottom: 6px;
+}
+
+.Forecast .forecast-day,
+.Forecast .forecast-temps {
+  text-align: center;
+}
+
+.Forecast .forecast img {
+  position: relative;
+  left: 19px;
+}
+
+.Forecast .temp-min {
+  opacity: 0.7;
+}

@@ -1,0 +1,11 @@
+.Footer .github-link {
+  color: rgb(22, 26, 87);
+}
+
+@media (max-width: 575px) {
+  .Footer {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+  }
+}

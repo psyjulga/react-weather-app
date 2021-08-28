@@ -1,0 +1,6 @@
+body {
+  background-color: rgb(203, 225, 238);
+  background-image: url(sky.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
