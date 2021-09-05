@@ -51,11 +51,10 @@
 }
 
 @media (max-width: 575px) {
-  .Todayweather .icon {
-    width: 120px;
+  .Todayweather canvas {
+    width: 150px;
     display: block;
     margin: 15px auto;
-    position: static;
   }
 
   .Todayweather .output-one {
