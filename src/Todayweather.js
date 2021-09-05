@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import Temperature from "./Temperature";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Todayweather.css";
@@ -14,17 +15,9 @@ export default function Todayweather(props) {
 
       <div className="output-one col-sm-6">
         <div className="output-city-temp-unit">
-          <span className="city-and-temp">
-            <span>{props.data.cityOutput} </span>
-            <span>{props.data.temp}</span>°
-          </span>
-          <a href="/" className="celsius link active" title="Celsius Unit">
-            C
-          </a>
-          <span className="pipe">|</span>
-          <a href="/" className="fahrenheit link" title="Fahrenheit Unit">
-            F
-          </a>
+          <span className="city-and-temp city">{props.data.cityOutput} </span>
+
+          <Temperature celsius={props.data.temp} />
         </div>
         <div className="date">
           <FormattedDate date={props.data.date} />
