@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Todayweather.css";
@@ -7,8 +8,8 @@ import "./Todayweather.css";
 export default function Todayweather(props) {
   return (
     <div className="Todayweather row">
-      <div className="col-sm-2">
-        <img src={props.data.icon} alt="weather-icon" className="icon" />
+      <div className="col-sm-2 icon">
+        <WeatherIcon code={props.data.icon} alt={props.data.description} />
       </div>
 
       <div className="output-one col-sm-6">
