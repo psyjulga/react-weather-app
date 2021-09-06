@@ -21,6 +21,7 @@ export default function Searchform() {
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       icon: response.data.weather[0].icon,
+      coords: response.data.coord,
     });
   }
 
@@ -73,7 +74,7 @@ export default function Searchform() {
         <div>{form}</div>
         <Todayweather data={weather} />
         <hr />
-        <Forecast />
+        <Forecast coords={weather.coords} />
       </div>
     );
   } else {
