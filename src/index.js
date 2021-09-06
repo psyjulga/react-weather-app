@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Searchform from "./Searchform";
-import Forecast from "./Forecast";
 import Footer from "./Footer";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,8 +13,6 @@ function App() {
         <div className="weather-app">
           <h1 className="d-none">React Weather App</h1>
           <Searchform />
-          <hr />
-          <Forecast />
         </div>
         <Footer />
       </div>

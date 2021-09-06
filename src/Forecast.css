@@ -8,9 +8,10 @@
   text-align: center;
 }
 
-.Forecast .forecast img {
+.Forecast .icon {
   position: relative;
-  left: 19px;
+  left: 20px;
+  top: 3px;
 }
 
 .Forecast .temp-min {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Todayweather from "./Todayweather";
+import Forecast from "./Forecast";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./Searchform.css";
@@ -71,6 +72,8 @@ export default function Searchform() {
         {" "}
         <div>{form}</div>
         <Todayweather data={weather} />
+        <hr />
+        <Forecast />
       </div>
     );
   } else {

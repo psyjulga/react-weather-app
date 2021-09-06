@@ -10,7 +10,11 @@ export default function Todayweather(props) {
   return (
     <div className="Todayweather row">
       <div className="col-sm-2 icon">
-        <WeatherIcon code={props.data.icon} alt={props.data.description} />
+        <WeatherIcon
+          code={props.data.icon}
+          size={96}
+          alt={props.data.description}
+        />
       </div>
 
       <div className="output-one col-sm-6">
