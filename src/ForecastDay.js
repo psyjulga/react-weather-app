@@ -2,6 +2,9 @@ import React from "react";
 import WeatherIcon from "./WeatherIcon";
 
 export default function ForecastDay(props) {
+  console.log(props.data.temp);
+  // temp is not updated!
+
   function day() {
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     return days[new Date(props.data.dt * 1000).getDay()];
