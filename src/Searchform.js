@@ -51,7 +51,7 @@ export default function Searchform() {
             type="search"
             placeholder="Enter a city ..."
             className="form-control"
-            autoComplete={false}
+            autoComplete={"false"}
             autoFocus={true}
             onChange={updateCity}
           />

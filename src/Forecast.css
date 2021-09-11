@@ -1,17 +1,11 @@
-.Forecast .forecast-col {
-  position: relative;
-  bottom: 6px;
-}
-
 .Forecast .forecast-day,
 .Forecast .forecast-temps {
   text-align: center;
 }
 
-.Forecast .icon {
-  position: relative;
-  left: 20px;
-  top: 3px;
+.Forecast canvas {
+  display: block;
+  margin: 7px auto;
 }
 
 .Forecast .temp-min {

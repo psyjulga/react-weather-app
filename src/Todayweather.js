@@ -17,7 +17,7 @@ export default function Todayweather(props) {
         />
       </div>
 
-      <div className="output-one col-sm-6">
+      <div className="output-one col-sm-auto">
         <div className="output-city-temp-unit">
           <span className="city-and-temp city">{props.data.cityOutput} </span>
 
@@ -28,7 +28,7 @@ export default function Todayweather(props) {
         </div>
       </div>
 
-      <div className="col-sm-4 output-two">
+      <div className="col-sm-auto output-two">
         <ul>
           <li className="wind">Windspeed: {props.data.wind} km/h</li>
           <li className="humidity">Humidity: {props.data.humidity} %</li>
